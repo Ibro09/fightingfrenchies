@@ -6,7 +6,7 @@ import Link from "next/link";
 import { FaDiscord } from "react-icons/fa";
 export default function Footer() {
   return (
-    <footer className="bg-black text-white w-full mt-auto">
+    <footer className="bg-black text-white w-full">
       <div className="max-w-7xl mx-auto px-6 py-10 flex flex-col items-center">
         {/* Navigation Links */}
         <nav className="flex flex-wrap justify-center gap-8 text-sm md:text-base mb-6 text-gray-200 tracking-wide">
