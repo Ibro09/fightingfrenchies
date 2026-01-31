@@ -17,9 +17,8 @@ export default function Page() {
   const [s6, setS6] = useState(false);
 
   return (
-    <main className="relative w-full mt-[-100px] overflow-x-hidden">
+    <main className="relative w-full mt-[-100px]">
       <Section1 onFinish={() => setS1(true)} />
-
       {s1 && <Section2 onFinish={() => setS2(true)} />}
       {s2 && <Section3 onFinish={() => setS3(true)} />}
       {s3 && <Section4 onFinish={() => setS4(true)} />}
