@@ -34,10 +34,10 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col  min-h-screen items-center justify-start min-w-full`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen items-stretch min-w-full`}
       >
         <Navbar />
-        {children}
+        <div className="flex-1 flex flex-col">{children}</div>
       </body>
     </html>
   );

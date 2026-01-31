@@ -6,7 +6,7 @@ import Link from "next/link";
 import { FaDiscord } from "react-icons/fa";
 export default function Footer() {
   return (
-    <footer className="bg-black text-white w-full">
+    <footer className="bg-black text-white w-full mt-auto">
       <div className="max-w-7xl mx-auto px-6 py-10 flex flex-col items-center">
         {/* Navigation Links */}
         <nav className="flex flex-wrap justify-center gap-8 text-sm md:text-base mb-6 text-gray-200 tracking-wide">
@@ -42,7 +42,7 @@ export default function Footer() {
             aria-label="X (formerly Twitter)"
             className="w-12 h-12 flex items-center justify-center rounded-full border border-gray-400 hover:border-[#6eee07] hover:text-[#6eee07] transition-all duration-300 hover:scale-105"
           >
-           <Twitter className="w-5 h-5" />
+            <Twitter className="w-5 h-5" />
           </a>
 
           <a
