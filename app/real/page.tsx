@@ -3,8 +3,8 @@ import AnimateOnView from "../components/AnimateOnView";
 
 export default function Home() {
   return (
-    <div className="bg-black w-full mt-[-100px] pt-20 overflow-hidden">
-      <main className="w-full text-white mx-auto ">
+    <div className="bg-black w-full mt-[-100px] pt-20 overflow-hidden flex flex-col items-center bg-black">
+      <main className="w-full text-white mx-auto overflow-hidden">
         <WhyWeBuiltThis />
         <AnimateOnView
           animationClass="animate-slide-in-left"
@@ -29,8 +29,7 @@ export default function Home() {
           <Roadmap />
         </AnimateOnView>
 
-              <Footer />
-
+        <Footer />
       </main>
     </div>
   );
@@ -95,11 +94,12 @@ function WhyWeBuiltThis() {
   );
 }
 
-
-
 function Vision() {
   return (
-    <section className="relative bg-black text-white py-24 overflow-hidden" id="vision">
+    <section
+      className="relative bg-black text-white py-24 overflow-hidden"
+      id="vision"
+    >
       {/* Background Accent */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#6eee07]/10 via-transparent to-[#6eee07]/10" />
 

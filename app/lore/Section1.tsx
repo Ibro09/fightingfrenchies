@@ -9,7 +9,7 @@ export default function Section1({ onFinish }: { onFinish?: () => void }) {
         bg-black
         flex items-center justify-center
         text-white
-        shadow-2xl
+        shadow-2xl overflow-hidden
       "
     >
       <section className="relative w-full h-screen flex items-center justify-center text-center overflow-hidden">

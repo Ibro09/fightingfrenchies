@@ -4,7 +4,7 @@ export default function ComingSoon() {
   const text = "Coming   Soon...";
 
   return (
-    <div className="w-full relative min-h-screen overflow-hidden bg-[green]/70 mt-[-100px]">
+    <div className="w-full relative min-h-screen overflow-hidden bg-[green]/70 mt-[-100px] flex flex-col items-center bg-black">
       <section className="flex h-[calc(100vh+100px)] items-center bg-[url('/bullhead.png')] bg-cover relative">
         <div className="absolute inset-0 bg-black/60"></div>
 

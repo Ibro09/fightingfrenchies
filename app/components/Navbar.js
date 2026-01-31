@@ -104,7 +104,7 @@ const Navbar = () => {
               damping: 15,
               duration: 0.6,
             }}
-            className="fixed left-0 bottom-0 right-0 top-0 bg-black flex flex-col items-center justify-center space-y-8 text-xl z-50 text-white border rounded-[20px] h-[90vh] w-[90vw]"
+            className="fixed left-0 bottom-0 right-0 top-0 bg-black/80 flex flex-col items-center justify-center space-y-8 text-xl z-50 text-white border rounded-[20px] h-[90vh] w-[90vw]"
           >
             {mobileLinks.map((link, index) => {
               const isActive = pathname === link.url;
