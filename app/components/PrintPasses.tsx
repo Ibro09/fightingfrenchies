@@ -6,7 +6,7 @@ export default function PrintPasses() {
       {/* Background overlay */}
       <div className="absolute inset-0 bg-[url('/head.png')] bg-cover z-10"></div>
       {/* Card */}
-      <div className="relative z-10 bg-[#0b0b0b] rounded-2xl w-[400px] p-5 py-10 text-center shadow-2xl">
+      <div className="relative z-10 bg-[#0b0b0b] rounded-2xl w-[90%] md:w-[400px] p-5 py-10 text-center shadow-2xl">
         <h1 className="text-2xl font-bold text-white mb-5">
           Paw Print Passes
         </h1>

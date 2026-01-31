@@ -8,9 +8,9 @@ export default function Home() {
     <div className="flex min-h-screen items-center flex-col  dark:bg-black w-full  bg-cover mt-[-100px]         overflow-hidden">
       <section className="flex min-h-screen items-center  bg-zinc-50 dark:bg-black w-full bg-[url('/cage.jpg')] bg-cover">
         <div className="absolute inset-0 bg-black/60"></div>
-        <div className="relative z-10 p-6 text-white flex flex-col items-center  w-full mt-[100px]">
+        <div className="relative z-10 p-3 md:p-6 text-white flex flex-col items-center  w-full mt-[100px]">
           <div
-            className="w-[95%] md:w-[90%] h-auto mb-8 border-1 border-[gray]/40 rounded-3xl shadow-lg p-10 pt-20 bg-[#424242]/30 backdrop-blur-sm flex flex-col md:flex-row         overflow-visible
+            className="w-[100%] md:w-[90%] h-auto mb-8 border-1 border-[gray]/40 rounded-3xl shadow-lg p-10 pt-20 bg-[#424242]/30 backdrop-blur-sm flex flex-col md:flex-row         overflow-visible
 "
           >
             <div className="w-full  md:w-1/4 text-left mb-6">
@@ -87,7 +87,7 @@ export default function Home() {
       <section className="w-full">
         <Welcome />
       </section>
-      <section className="w-[90%]  md:w-full mb-20">
+      <section className="w-full mb-20">
         <PrintPasses />
       </section>
       <Footer />
