@@ -1,65 +1,96 @@
-import Image from "next/image";
+import PrintPasses from "./components/PrintPasses";
+import SplineHero from "./components/SplineHero";
+import Welcome from "./components/Welcome";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <div className="flex min-h-screen items-center flex-col  dark:bg-black w-full  bg-cover mt-[-100px]         overflow-hidden">
+      <section className="flex min-h-screen items-center  bg-zinc-50 dark:bg-black w-full bg-[url('/cage.jpg')] bg-cover">
+        <div className="absolute inset-0 bg-black/60"></div>
+        <div className="relative z-10 p-6 text-white flex flex-col items-center  w-full mt-[100px]">
+          <div
+            className="w-[90%] h-auto mb-8 border-1 border-[gray]/40 rounded-3xl shadow-lg p-10 pt-20 bg-[#424242]/30 backdrop-blur-sm flex flex-col md:flex-row         overflow-visible
+"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+            <div className="w-full  md:w-1/4 text-left mb-6">
+              <h1 className="text-2xl text-[#5b5b5b]">
+                Welcome to Fighting Frenchies!
+              </h1>
+              <h1 className="text-[70px] font-bold text-[#5b5b5b] leading-none">
+                Keep
+              </h1>
+              <h1 className="text-[70px] font-bold text-[#5b5b5b] leading-none">
+                Fighting
+              </h1>
+              <h1 className="text-[70px] font-bold text-[#5b5b5b]  leading-none">
+                Foward
+              </h1>
+
+              <div>
+                <button className="mt-4 bg-[#6eee07] hover:bg-[#6eee07]/70 text-black font-semibold py-3 px-6 rounded group transition duration-200">
+                  <a href="" className="flex items-center">
+                    Mint Green Passes
+                    <span className="scale-0 origin-left group-hover:scale-100 transition duration-200 -mr-2 ml-2">
+                      ›
+                    </span>
+                  </a>
+                </button>
+              </div>
+              <div>
+                <button className="mt-4 bg-[#6eee07] hover:bg-[#6eee07]/70 text-black font-semibold py-3 px-6 rounded group transition duration-200">
+                  <a href="" className="flex items-center">
+                    Mint Black Passes
+                    <span className="scale-0 origin-left group-hover:scale-100 transition duration-200 -mr-2 ml-2">
+                      ›
+                    </span>
+                  </a>
+                </button>
+              </div>
+              <div>
+                <button className="mt-4 bg-[#5b5b5b]  text-black font-semibold py-3 px-6 rounded group transition duration-200">
+                  <a className="flex items-center">
+                    Mint Red Passes
+                    <span className="scale-0 origin-left group-hover:scale-100 transition duration-200 -mr-2 ml-2">
+                      ›
+                    </span>
+                  </a>
+                </button>
+              </div>
+              <div>
+                <button className="mt-4 bg-[#5b5b5b]  text-black font-semibold py-3 px-6 rounded group transition duration-200">
+                  <a className="flex items-center">
+                    Mint Gold Passes
+                    <span className="scale-0 origin-left group-hover:scale-100 transition duration-200  -mr-2 ml-2">
+                      ›
+                    </span>
+                  </a>
+                </button>
+              </div>
+              <div>
+                <button className="mt-4 bg-[#5b5b5b]  text-black font-semibold py-3 px-6 rounded group transition duration-200">
+                  <a className="flex items-center">
+                    Alpha Dawg Passes
+                    <span className="scale-0 origin-left group-hover:scale-100 transition duration-200  -mr-2 ml-2">
+                      ›
+                    </span>
+                  </a>
+                </button>
+              </div>
+            </div>
+            <div className="w-full md:w-full h-auto flex items-center justify-center">
+              <SplineHero />
+            </div>
+          </div>
         </div>
-      </main>
+      </section>
+      <section className="w-full">
+        <Welcome />
+      </section>
+      <section className="w-full mb-20">
+        <PrintPasses />
+      </section>
+      <Footer />
     </div>
   );
 }

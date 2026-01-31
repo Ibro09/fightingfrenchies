@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -20,7 +21,227 @@
 }
 
 body {
-  background: var(--background);
+  background: var(--foreground);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Saira", sans-serif;
+  /* font-family: 'Alfa Slab One', display; */
+}
+
+.hero {
+  min-height: 100vh;
+  background:
+    url("/pattern.svg") repeat,
+    linear-gradient(135deg, #b84cff, #001b2e);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-inner {
+  width: 100%;
+  max-width: 1400px;
+  padding: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.ticket-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.ticket {
+  max-width: 360px;
+  transform: rotate(-6deg);
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+  color: white;
+  position: relative;
+}
+
+.hero-content h1 {
+  font-size: clamp(4rem, 8vw, 7rem);
+  line-height: 0.9;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  color: #000;
+  text-shadow:
+    -2px -2px 0 #000,
+    2px 2px 0 #000;
+}
+
+.subtitle {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  font-size: 2rem;
+  font-weight: 500;
+  color: white;
+}
+
+.cta {
+  margin-top: 4rem;
+  background: #7dff00;
+  color: #000;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(125, 255, 0, 0.5);
+}
+
+.typing-cursor {
+  display: inline-block;
+  margin-left: 2px;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Simple entrance animations */
+@keyframes slideUp {
+  from {
+    transform: translateY(16px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-24px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(24px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-16px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-slide-up {
+  animation: slideUp 700ms cubic-bezier(.2, .9, .2, 1) both;
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 700ms cubic-bezier(.2, .9, .2, 1) both;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 700ms cubic-bezier(.2, .9, .2, 1) both;
+}
+
+.animate-slide-down {
+  animation: slideDown 700ms cubic-bezier(.2, .9, .2, 1) both;
+}
+
+.animate-fade-in {
+  animation: fadeIn 600ms ease both;
+}
+
+/* Delay helpers (small set) */
+.delay-100 {
+  animation-delay: 100ms;
+}
+
+.delay-200 {
+  animation-delay: 200ms;
+}
+
+.delay-300 {
+  animation-delay: 300ms;
+}
+
+.delay-400 {
+  animation-delay: 400ms;
+}
+
+.delay-500 {
+  animation-delay: 500ms;
+}
+
+.delay-600 {
+  animation-delay: 600ms;
+}
+
+.delay-700 {
+  animation-delay: 700ms;
+}
+
+.delay-800 {
+  animation-delay: 800ms;
+}
+
+/* Smooth anchor scrolling for in-page links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Footer X pseudo-icon — adds glyph before the X anchor */
+.icon-x::before {
+  content: "\e094";
+  display: inline-block;
+  font-style: normal;
+  font-weight: 700;
+  speak: none;
+  line-height: 1;
+  margin-right: 0.25rem;
+  /* fallback font family — change if using a specific icon font */
+  font-family: 'Font Awesome 5 Free', 'Segoe UI Symbol', system-ui, sans-serif;
+  font-size: 1rem;
+  vertical-align: middle;
 }
