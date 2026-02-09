@@ -3,7 +3,7 @@
 
 import { Instagram, Linkedin, Twitter } from "lucide-react";
 import Link from "next/link";
-import { FaDiscord } from "react-icons/fa";
+import { FaDiscord, FaTelegram } from "react-icons/fa";
 export default function Footer() {
   return (
     <footer className="bg-black text-white w-full">
@@ -39,6 +39,7 @@ export default function Footer() {
         {/* Social Icons */}
         <div className="flex justify-center space-x-6 mb-6">
           <a
+          href="https://x.com/F_Frenchies"
             aria-label="X (formerly Twitter)"
             className="w-12 h-12 flex items-center justify-center rounded-full border border-gray-400 hover:border-[#6eee07] hover:text-[#6eee07] transition-all duration-300 hover:scale-105"
           >
@@ -49,7 +50,7 @@ export default function Footer() {
             aria-label="Instagram"
             className="w-12 h-12 flex items-center justify-center rounded-full border border-gray-400 hover:border-[#6eee07] hover:text-[#6eee07] transition-all duration-300 hover:scale-105"
           >
-            <Instagram className="w-5 h-5" />
+            <FaTelegram className="w-5 h-5" />
           </a>
 
           <a

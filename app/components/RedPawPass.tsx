@@ -25,7 +25,7 @@ export default function PawPassSection() {
           </h2>
 
           <p className="text-sm sm:text-base leading-relaxed opacity-90 mb-8">
-           Green gave every dawg a fair fighting chance—1,000 minted out in 48 hours. Black raised the stakes at 0.02 ETH. Now we ante up with 1,000 of our Red Paw Print Passes, imprinted on chain forever. Forged in the fire, our Red Paw Print Passes are for a true D.A.W.G.: Determined Attitude With Gratitude. Because every dawg knows that with gratitude, comes more blessings, more wins and more abundance in all areas of our lives.
+           Green gave every dawg a fair fighting chance—1,000 minted out in 48 hours.. Now we ante up with 1,000 of our Red Paw Print Passes, imprinted on chain forever. Forged in the fire, our Red Paw Print Passes are for a true D.A.W.G.: Determined Attitude With Gratitude. Because every dawg knows that with gratitude, comes more blessings, more wins and more abundance in all areas of our lives.
             <br />
             <br />
            Mint to fuel the fire, make a fearless flip, or HODL if you’re Diamond Minded.Gold may be the glory that lies ahead, but when it’s time to fight, “I Se3 R3d D@wG!” The third rule of Fighting Frenchie Fight Club: If someone yelps, lays down, or paws out.. the fight is over. Keep Fighting Forward.
