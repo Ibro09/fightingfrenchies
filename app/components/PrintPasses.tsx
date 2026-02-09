@@ -29,7 +29,7 @@ export default function PrintPasses() {
 
         {/* Button */}
         <button className=" bg-[#6eee07] hover:bg-[#6eee07]/70 text-black font-semibold py-3 px-6 rounded group transition duration-200">
-          <a className="flex items-center">
+          <a href="https://magiceden.io/collections/ethereum/fighting-frenchies-179485061?gr" className="flex items-center">
             Mint Green Passes
             <span className="scale-0 origin-left group-hover:scale-100 transition duration-200 -mr-2 ml-2">
               ›

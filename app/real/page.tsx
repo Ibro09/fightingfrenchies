@@ -24,6 +24,11 @@ export default function Home() {
           <FoundersMessage />
         </AnimateOnView>
 
+        {/* Founder Funnel */}
+        <AnimateOnView animationClass="animate-slide-up" delayClass="delay-200">
+          <FounderFunnel />
+        </AnimateOnView>
+
         {/* Roadmap */}
         <AnimateOnView animationClass="animate-slide-up" delayClass="delay-200">
           <Roadmap />
@@ -429,6 +434,109 @@ function FoundersMessage() {
           <p className="mt-2 text-sm text-white/50">
             Determined Attitude With Gratitude
           </p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function FounderFunnel() {
+  return (
+    <section className="relative bg-black text-white py-24 overflow-hidden">
+      {/* Subtle Green Accent */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#6eee07]/5 via-transparent to-[#6eee07]/5" />
+
+      <div className="relative max-w-6xl mx-auto px-6">
+        {/* Heading */}
+        <div className="text-center mb-12">
+          <span className="text-sm uppercase tracking-widest text-white/50">
+            Resources
+          </span>
+
+          <h2 className="mt-4 text-3xl md:text-4xl font-bold">
+            Explore the Universe
+          </h2>
+
+          {/* Divider */}
+          <div className="mx-auto mt-6 h-px w-24 bg-white/10" />
+        </div>
+
+        {/* PDF Cards Flex Container */}
+        <div className="mt-12 flex flex-col md:flex-row gap-8 justify-center items-stretch">
+          {/* Founder Funnel PDF Card */}
+          <a
+            href="/founder-funnel.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-1 max-w-sm"
+          >
+            <div
+              className="rounded-2xl bg-black border border-white/10 p-12 hover:border-[#6eee07]/50 transition duration-300 cursor-pointer group h-full flex flex-col"
+              style={{
+                boxShadow: `8px 8px 0px #6fee077a, 8px 8px 12px rgba(0,0,0,0.35)`,
+              }}
+            >
+              {/* PDF Icon */}
+              <div className="flex justify-center mb-6">
+                <div className="text-6xl group-hover:scale-110 transition duration-300">
+                  📄
+                </div>
+              </div>
+
+              {/* Content */}
+              <h3 className="text-2xl font-semibold mb-3">Founder Funnel</h3>
+              <p className="text-white/70 mb-6 flex-grow">
+                Access the complete founder funnel guide and strategy document
+              </p>
+
+              {/* Button */}
+              <button className="bg-[#6eee07] hover:bg-[#6eee07]/80 text-black font-semibold py-3 px-6 rounded group/btn transition duration-200 flex items-center gap-2 mx-auto">
+                Open PDF
+                <span className="scale-0 origin-left group-hover/btn:scale-100 transition duration-200">
+                  →
+                </span>
+              </button>
+            </div>
+          </a>
+
+          {/* Lore PDF Card */}
+          <a
+            href="/lore.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-1 max-w-sm"
+          >
+            <div
+              className="rounded-2xl bg-black border border-white/10 p-12 hover:border-[#6eee07]/50 transition duration-300 cursor-pointer group h-full flex flex-col"
+              style={{
+                boxShadow: `8px 8px 0px #6fee077a, 8px 8px 12px rgba(0,0,0,0.35)`,
+              }}
+            >
+              {/* PDF Icon */}
+              <div className="flex justify-center mb-6">
+                <div className="text-6xl group-hover:scale-110 transition duration-300">
+                  📖
+                </div>
+              </div>
+
+              {/* Content */}
+              <h3 className="text-2xl font-semibold mb-3">
+                Lore & Art History
+              </h3>
+              <p className="text-white/70 mb-6 flex-grow">
+                Discover the story behind Fighting Frenchies art and character
+                evolution
+              </p>
+
+              {/* Button */}
+              <button className="bg-[#6eee07] hover:bg-[#6eee07]/80 text-black font-semibold py-3 px-6 rounded group/btn transition duration-200 flex items-center gap-2 mx-auto">
+                Open PDF
+                <span className="scale-0 origin-left group-hover/btn:scale-100 transition duration-200">
+                  →
+                </span>
+              </button>
+            </div>
+          </a>
         </div>
       </div>
     </section>

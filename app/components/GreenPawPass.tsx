@@ -42,7 +42,8 @@ export default function PawPassSection() {
           </p>
 
           <button className="bg-[#7CFF00] text-black font-semibold px-8 py-4 rounded-full hover:scale-105 transition">
-            VISIT COLLECTION →
+            <a href="https://magiceden.io/collections/ethereum/fighting-frenchies-179485061?gr">
+            VISIT COLLECTION →</a>
           </button>
         </div>
       </div>

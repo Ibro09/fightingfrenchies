@@ -9,11 +9,10 @@ export default function ComingSoon() {
         <div className="absolute inset-0 bg-black/60"></div>
 
         <div className="relative z-10 p-6 text-white flex flex-col items-center justify-center w-full">
-          {/* Iframe */}
          
 
           {/* Bouncy Loading Text */}
-          <div className="flex space-x-1 text-3xl sm:text-4xl md:text-5xl font-bold">
+          <div className="flex space-x-1 text-3xl sm:text-4xl md:text-5xl font-bold text-[red]">
             {text.split("").map((letter, idx) => (
               <span
                 key={idx}

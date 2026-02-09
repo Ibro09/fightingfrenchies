@@ -29,7 +29,7 @@ export default function PawPassSection() {
           </h2>
 
           <p className="text-sm sm:text-base leading-relaxed opacity-90 mb-8">
-           As it’s said, “Give a dawg a bone,” so we did. We gave every underdawg a fair fighting chance—1,000 of our Green Paw Print Passes minted out in the first 48hrs! Now, the Fighting Frenchie Fight Club unleashes 1,000 Black Paw Print Passes at 0.02 ETH each. These aren’t just pretty little videos of a pretty little tickets. This is real utility, lasting value and notably some of the best hand drawn art to ever come to the space.
+           As it’s said, “Give a dawg a bone,” so we did. We gave every underdawg a fair fighting chance—1,000 of our Green Paw Print Passes minted out in the first 48hrs! Now, the Fighting Frenchie Fight Club unleashes 1,000 Black Paw Print Passes. These aren’t just pretty little videos of a pretty little tickets. This is real utility, lasting value and notably some of the best hand drawn art to ever come to the space.
             <br />
             <br />
            You can get far by yourself, but together we go further. Embark with us on the Fighting Frenchie World Wide Takeover. Mint to take the center of the ring, HODL, or flip if you dare—your move, just don’t tap out. Will you be our next Alpha Dawg? The second rule of Fighting Frenchie Fight Club: Talk about Fighting Frenchie Fight Club. Keep fighting forward.

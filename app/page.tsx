@@ -9,10 +9,7 @@ export default function Home() {
       <section className="flex min-h-screen items-center  bg-zinc-50 dark:bg-black w-full bg-[url('/cage.jpg')] bg-cover">
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="relative z-10 p-3 md:p-6 text-white flex flex-col items-center  w-full mt-[100px]">
-          <div
-            className="w-[100%] md:w-[90%] h-auto mb-8 border-1 border-[gray]/40 rounded-3xl shadow-lg p-10 pt-20 bg-[#424242]/30 backdrop-blur-sm flex flex-col md:flex-row         overflow-visible
-"
-          >
+          <div className="w-[100%] md:w-[90%] h-auto mb-8 border-1 border-[gray]/40 rounded-3xl shadow-lg p-10 pt-20 bg-[#424242]/30 backdrop-blur-sm flex flex-col md:flex-row         overflow-visible">
             <div className="w-full  md:w-1/4 text-left mb-6">
               <h1 className="text-2xl text-[#5b5b5b]">
                 Welcome to Fighting Frenchies!
@@ -26,10 +23,12 @@ export default function Home() {
               <h1 className="text-[70px] font-bold text-[#5b5b5b]  leading-none">
                 Foward
               </h1>
-
               <div>
                 <button className="mt-4 bg-[#6eee07] hover:bg-[#6eee07]/70 text-black font-semibold py-3 px-6 rounded group transition duration-200">
-                  <a href="" className="flex items-center">
+                  <a
+                    href="https://magiceden.io/collections/ethereum/fighting-frenchies-179485061?gr"
+                    className="flex items-center"
+                  >
                     Mint Green Passes
                     <span className="scale-0 origin-left group-hover:scale-100 transition duration-200 -mr-2 ml-2">
                       ›

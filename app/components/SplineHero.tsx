@@ -1,7 +1,7 @@
 export default function SplineHero() {
   return (
     <div
-      className="w-full flex justify-center ml-[-20px] md:ml-0"
+      className="w-full flex justify-center ml-[-25px] md:ml-0"
     >
       <div className=" w-[1000px] h-[500px] md:h-[600px]  relative  flex items-center justify-center ">
         <iframe

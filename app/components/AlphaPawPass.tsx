@@ -10,7 +10,6 @@ export default function PawPassSection() {
     >
       {/* Content wrapper */}
       <div className="relative z-10 max-w-6xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-        
         {/* LEFT — Paw Pass iframe */}
         <div className="flex justify-center lg:justify-start">
           <div className="
@@ -20,18 +19,17 @@ export default function PawPassSection() {
             origin-center
           ">
             <iframe
-              src="https://my.spline.design/pawpassgolddisplay-2XQZlBRaC8EllIx5dWPZ2C5J/"
-              className="pointer-events-none w-[650px] h-[650px]"
+             src="https://my.spline.design/pawpassalphadisplaycopycopy-jqFVQy3DPl8uyDrSFh6N4x58/" className="pointer-events-none w-[650px] h-[650px]"
             />
           </div>
         </div>
 
         {/* RIGHT — Text content */}
         <div className="text-white max-w-xl text-center lg:text-left">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-6 leading-tight">
-            Gold Paw Print
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 leading-tight">
+            ALPHA DAWG
             <br />
-            Pass
+            PASS
           </h2>
 
           <button className="
