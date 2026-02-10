@@ -37,7 +37,7 @@ export default function Home() {
                 </button>
               </div>
               <div>
-                <button className="mt-4 bg-[#6eee07] hover:bg-[#6eee07]/70 text-black font-semibold py-3 px-6 rounded group transition duration-200">
+                <button className="mt-4 bg-[#5b5b5b] text-black font-semibold py-3 px-6 rounded group transition duration-200">
                   <a href="" className="flex items-center">
                     Mint Black Passes
                     <span className="scale-0 origin-left group-hover:scale-100 transition duration-200 -mr-2 ml-2">
