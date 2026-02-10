@@ -3,7 +3,7 @@ export default function PawPassSection() {
     <section
       className="relative w-full min-h-screen overflow-hidden flex items-center py-20"
       style={{
-           backgroundImage: "radial-gradient(circle at top left, rgba(255, 255, 255, 0) 0%, #4c0000ab 80%), url('/head.png') !important;",
+           backgroundImage: "radial-gradient(circle at top left, rgba(255, 255, 255, 0) 0%, #4c0000ab 80%), url('/head.png') !important",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

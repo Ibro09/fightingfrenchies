@@ -19,11 +19,11 @@ export default function Page() {
   return (
     <main className="relative w-full mt-[-100px]">
       <Section1 onFinish={() => setS1(true)} />
-      {s1 && <Section2 onFinish={() => setS2(true)} />}
-      {s2 && <Section3 onFinish={() => setS3(true)} />}
-      {s3 && <Section4 onFinish={() => setS4(true)} />}
-      {s4 && <Section5 onFinish={() => setS5(true)} />}
-      {s5 && <Section6 onFinish={() => setS6(true)} />}
+      <Section2 onFinish={() => setS2(true)} />
+      <Section3 onFinish={() => setS3(true)} />
+      <Section4 onFinish={() => setS4(true)} />
+      <Section5 onFinish={() => setS5(true)} />
+      <Section6 onFinish={() => setS6(true)} />
     </main>
   );
 }

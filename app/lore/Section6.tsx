@@ -1,7 +1,5 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-
 const lines = [
   { text: "Holder Identity", type: "title" },
   {
@@ -29,55 +27,9 @@ const lines = [
 ];
 
 export default function Section6({ onFinish }: { onFinish?: () => void }) {
-  const sectionRef = useRef(null);
-  const [visible, setVisible] = useState(false);
-  const [currentLine, setCurrentLine] = useState(0);
-  const [displayed, setDisplayed] = useState("");
-
-  const SPEED = 55;
-  const [finished, setFinished] = useState(false);
-
-  useEffect(() => {
-    if (currentLine >= lines.length && !finished) {
-      setFinished(true);
-      if (onFinish) onFinish();
-    }
-  }, [currentLine, finished, onFinish]);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => entry.isIntersecting && setVisible(true),
-      { threshold: 0.5 },
-    );
-    if (sectionRef.current) observer.observe(sectionRef.current);
-    return () => observer.disconnect();
-  }, []);
-
-  useEffect(() => {
-    if (!visible || currentLine >= lines.length) return;
-
-    let i = 0;
-    setDisplayed("");
-
-    const interval = setInterval(() => {
-      const text = lines[currentLine].text;
-
-      setDisplayed(text.slice(0, i + 1));
-      i++;
-
-      if (i === text.length) {
-        clearInterval(interval);
-        setTimeout(() => setCurrentLine((prev) => prev + 1), 300);
-      }
-    }, SPEED);
-
-    return () => clearInterval(interval);
-  }, [visible, currentLine]);
-
   return (
     <div className="h-screen">
       <section
-        ref={sectionRef}
         style={{ top: "100px", height: `calc(100vh - 100px)` }}
         className="sticky bg-[gray] rounded-t-3xl shadow-2xl flex items-center justify-center text-white mt-20"
         id="holders"
@@ -90,7 +42,7 @@ export default function Section6({ onFinish }: { onFinish?: () => void }) {
           {/* Content */}
           <div className="relative z-10 max-w-4xl px-6">
             <section className="py-28 space-y-4 text-sm md:text-base font-light">
-              {lines.slice(0, currentLine + 1).map((line, index) => (
+              {lines.map((line, index) => (
                 <p
                   key={index}
                   className={`
@@ -98,14 +50,7 @@ export default function Section6({ onFinish }: { onFinish?: () => void }) {
                     ${line.type === "title" ? "text-xl md:text-3xl font-semibold tracking-tight" : ""}
                   `}
                 >
-                  {index === currentLine ? (
-                    <>
-                      {displayed}
-                      <span className="typing-cursor">|</span>
-                    </>
-                  ) : (
-                    line.text
-                  )}
+                  {line.text}
                 </p>
               ))}
             </section>
