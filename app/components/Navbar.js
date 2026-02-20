@@ -15,7 +15,7 @@ const Navbar = () => {
     { name: "Home", url: "/" },
     { name: "Paw Print Passes", url: "/passes" },
     { name: "Lore", url: "/lore" },
-    { name: "Real Talk", url: "/real" },
+    { name: "Champ Talk", url: "/real" },
     { name: "Shop", url: "/loading" },
   ];
 
@@ -23,7 +23,7 @@ const Navbar = () => {
     { name: "Home", url: "/" },
     { name: "Paw Print Passes", url: "/passes" },
     { name: "Lore", url: "/lore" },
-    { name: "Real Talk", url: "/real" },
+    { name: "Champ Talk", url: "/real" },
     { name: "Shop", url: "/loading" },
   ];
 
@@ -91,49 +91,50 @@ const Navbar = () => {
 
       {/* ✅ Full-Screen Mobile Menu with "dot expanding" animation */}
       <div className="w-full h-full flex items-center justify-center">
-      <AnimatePresence >
-        {isOpen && (
-          <motion.div
-            key="mobile-menu"
-            initial={{ scale: 0, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            exit={{ scale: 0, opacity: 0 }}
-            transition={{
-              type: "spring",
-              stiffness: 100,
-              damping: 15,
-              duration: 0.6,
-            }}
-            className="fixed left-0 bottom-0 right-0 top-0 bg-black/80 flex flex-col items-center justify-center space-y-8 text-xl z-50 text-white border rounded-[20px] h-[100vh] w-[100vw]"
-          >
-            {mobileLinks.map((link, index) => {
-              const isActive = pathname === link.url;
-              return (
-                <motion.div
-                  key={link.name}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.3 + index * 0.1 }}
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <Link
-                    href={link.url}
-                    className={
-                      isActive
-                        ? "text-[#6eee07]/70 uppercase"
-                        : "hover:text-[#6eee07]/70 uppercase text-white"
-                    }
-                    onClick={() => setIsOpen(false)}
+        <AnimatePresence>
+          {isOpen && (
+            <motion.div
+              key="mobile-menu"
+              initial={{ scale: 0, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0, opacity: 0 }}
+              transition={{
+                type: "spring",
+                stiffness: 100,
+                damping: 15,
+                duration: 0.6,
+              }}
+              className="fixed left-0 bottom-0 right-0 top-0 bg-black/80 flex flex-col items-center justify-center space-y-8 text-xl z-50 text-white border rounded-[20px] h-[100vh] w-[100vw]"
+            >
+              {mobileLinks.map((link, index) => {
+                const isActive = pathname === link.url;
+                return (
+                  <motion.div
+                    key={link.name}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.3 + index * 0.1 }}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
                   >
-                    {link.name}
-                  </Link>
-                </motion.div>
-              );
-            })}
-          </motion.div>
-        )}
-      </AnimatePresence></div>
+                    <Link
+                      href={link.url}
+                      className={
+                        isActive
+                          ? "text-[#6eee07]/70 uppercase"
+                          : "hover:text-[#6eee07]/70 uppercase text-white"
+                      }
+                      onClick={() => setIsOpen(false)}
+                    >
+                      {link.name}
+                    </Link>
+                  </motion.div>
+                );
+              })}
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
     </header>
   );
 };

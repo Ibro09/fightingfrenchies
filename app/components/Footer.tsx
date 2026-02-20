@@ -23,7 +23,7 @@ export default function Footer() {
             LORE
           </Link>
           <Link href="/real" className="hover:text-[#6eee07] transition-colors">
-            REAL-TALK
+            CHAMP-TALK
           </Link>
           <Link
             href="/loading"
@@ -39,7 +39,7 @@ export default function Footer() {
         {/* Social Icons */}
         <div className="flex justify-center space-x-6 mb-6">
           <a
-          href="https://x.com/F_Frenchies"
+            href="https://x.com/F_Frenchies"
             aria-label="X (formerly Twitter)"
             className="w-12 h-12 flex items-center justify-center rounded-full border border-gray-400 hover:border-[#6eee07] hover:text-[#6eee07] transition-all duration-300 hover:scale-105"
           >

@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function PrintPasses() {
   return (
     <section className="relative w-full h-[90vh] bg-[#212121] flex items-center justify-center text-center text-white overflow-hidden py-20 ">
