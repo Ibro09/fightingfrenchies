@@ -46,26 +46,28 @@ export default function Footer() {
             <Twitter className="w-5 h-5" />
           </a>
 
-          <a
+          {/* <a
             aria-label="Instagram"
             className="w-12 h-12 flex items-center justify-center rounded-full border border-gray-400 hover:border-[#6eee07] hover:text-[#6eee07] transition-all duration-300 hover:scale-105"
           >
             <FaTelegram className="w-5 h-5" />
-          </a>
+          </a> */}
 
           <a
+          href="https://discord.gg/n9gZYsfu9V"
+          target="_blank"
             aria-label="Discord"
             className="w-12 h-12 flex items-center justify-center rounded-full border border-gray-400 hover:border-[#6eee07] hover:text-[#6eee07] transition-all duration-300 hover:scale-105"
           >
             <FaDiscord className="w-5 h-5" />
           </a>
 
-          <a
+          {/* <a
             aria-label="LinkedIn"
             className="w-12 h-12 flex items-center justify-center rounded-full border border-gray-400 hover:border-[#6eee07] hover:text-[#6eee07] transition-all duration-300 hover:scale-105"
           >
             <Linkedin className="w-5 h-5" />
-          </a>
+          </a> */}
         </div>
       </div>
 
