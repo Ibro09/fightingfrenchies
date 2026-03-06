@@ -538,6 +538,82 @@ function FounderFunnel() {
             </div>
           </a>
         </div>
+
+        <div className="mt-12 flex flex-col md:flex-row gap-8 justify-center items-stretch">
+          {/* White Paper PDF Card */}
+          <a
+            href="/wp.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-1 max-w-sm"
+          >
+            <div
+              className="rounded-2xl bg-black border border-white/10 p-12 hover:border-[#6eee07]/50 transition duration-300 cursor-pointer group h-full flex flex-col"
+              style={{
+                boxShadow: `8px 8px 0px #6fee077a, 8px 8px 12px rgba(0,0,0,0.35)`,
+              }}
+            >
+              {/* PDF Icon */}
+              <div className="flex justify-center mb-6">
+                <div className="text-6xl group-hover:scale-110 transition duration-300">
+                  📄
+                </div>
+              </div>
+
+              {/* Content */}
+              <h3 className="text-2xl font-semibold mb-3">White Paper</h3>
+              <p className="text-white/70 mb-6 flex-grow">
+                Read our comprehensive white paper detailing our vision,
+                mission, and roadmap for the future of Fighting Frenchies.
+              </p>
+
+              {/* Button */}
+              <button className="bg-[#6eee07] hover:bg-[#6eee07]/80 text-black font-semibold py-3 px-6 rounded group/btn transition duration-200 flex items-center gap-2 mx-auto">
+                Open PDF
+                <span className="scale-0 origin-left group-hover/btn:scale-100 transition duration-200">
+                  →
+                </span>
+              </button>
+            </div>
+          </a>
+
+          {/* Project Deck PDF Card */}
+          <a
+            href="/deck.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-1 max-w-sm"
+          >
+            <div
+              className="rounded-2xl bg-black border border-white/10 p-12 hover:border-[#6eee07]/50 transition duration-300 cursor-pointer group h-full flex flex-col"
+              style={{
+                boxShadow: `8px 8px 0px #6fee077a, 8px 8px 12px rgba(0,0,0,0.35)`,
+              }}
+            >
+              {/* PDF Icon */}
+              <div className="flex justify-center mb-6">
+                <div className="text-6xl group-hover:scale-110 transition duration-300">
+                  📊
+                </div>
+              </div>
+
+              {/* Content */}
+              <h3 className="text-2xl font-semibold mb-3">Project Deck</h3>
+              <p className="text-white/70 mb-6 flex-grow">
+                Explore our comprehensive project overview, strategy, and visual
+                presentation of Fighting Frenchies.
+              </p>
+
+              {/* Button */}
+              <button className="bg-[#6eee07] hover:bg-[#6eee07]/80 text-black font-semibold py-3 px-6 rounded group/btn transition duration-200 flex items-center gap-2 mx-auto">
+                Open PDF
+                <span className="scale-0 origin-left group-hover/btn:scale-100 transition duration-200">
+                  →
+                </span>
+              </button>
+            </div>
+          </a>
+        </div>
       </div>
     </section>
   );
